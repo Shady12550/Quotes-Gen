@@ -1,0 +1,165 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    background-color: #e4f8ff;
+    margin: 0;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    max-width: 325px;
+    margin: -37px auto 30px;
+    border-bottom: 2px solid #999494;
+}
+
+.container::after {
+    content: "";
+    width: 200px;
+    height: 5px;
+    color: red;
+    position: absolute;
+}
+
+.container {
+    position: relative;
+    top: 40px;
+}
+
+.quotes {
+    background-color: #76bdcbcc;;
+    padding: 15px;
+    width: 100%;
+    min-height: 305px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+.quote-id {
+    position: absolute;
+    left: calc(50% - 75px);
+    top: -20px;
+    background-color: #64a7b1;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 4px 4px rgb(41, 59, 83);
+}
+
+.display {
+    padding: 10px 15px 15px;
+    font-weight: bold;
+    line-height: 2.5;
+    margin: 10px auto;
+    background-color: #ffffff;
+    color: rgb(105 105 105);
+    min-height: 260px;
+    box-shadow: inset 0px 0px 5px 1px #7ebcc9;
+    border-radius: 6px;
+    position: relative;
+    font-size: large;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display::before,.display::after {
+    position: absolute;
+    font-size: 30px;
+    color: rgb(127 127 127);
+}
+
+.display::before {
+    content: "❞";
+    right: 6px;
+    bottom: -26px;
+}
+
+.display::after {
+    content: "❝";
+    top: -13px;
+    left: 5px;
+}
+
+.buttons {
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin-top: 13px;
+    padding-bottom: 10px;
+}
+
+.buttons button {
+    background-color: #f9feff;
+    border: none;
+    height: 40px;
+    width: 25%;
+    min-width: 64px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 9px #335359;
+    cursor: pointer;
+}
+
+.auto-status {
+    font-size: 14px;
+    color: #403f3f;
+    font-weight: bold;
+    width: 90px;
+    height: 5px;
+    margin: 1px auto;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 2px; 
+
+}
+
+.add .theName, .add .theQuote {
+    height: 30px;
+    border: solid 1px #528cb3;
+    box-shadow: 0px 2px 1px #868699;
+    text-align: center;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4747;
+
+}
+
+.add .theQuote {
+    min-width: 65%;
+}
+
+
+.btn button {
+    width: 80px;
+    height: 32px;
+    padding: 5px;
+    border: none;
+    background-color: #379cabeb;
+    border-radius: 5px;
+    position: absolute;
+    left: calc(50% - 40px);
+    margin-top: 10px;
+    box-shadow: 0px 2px 2px #64646d;
+    cursor: pointer;
+    font-weight: bold;;
+}

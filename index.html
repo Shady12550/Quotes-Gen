@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>quote generator</h1>
+      <div class="quotes">
+        <span class="quote-id"></span>
+        <div class="display">
+          <span> </span>
+          <p class="text">Click Buttons To Get Quotes .</p>
+        </div>
+        <div class="buttons">
+          <button class="generate">Generate</button>
+          <button class="auto">Auto generate</button>
+          <button id="stop">Stop generate</button>
+        </div>
+        <div class="auto-status"></div>
+      </div>
+      <!--  -->
+      <div class="add">
+        <input
+          type="text"
+          placeholder="Add Your Quote"
+          class="theQuote"
+          name="Quote"
+        />
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="theName"
+          name="Name"
+        />
+      </div>
+      <!--  -->
+      <div class="btn">
+        <button class="addBtn">Add</button>
+        <div class="auto-status"></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
